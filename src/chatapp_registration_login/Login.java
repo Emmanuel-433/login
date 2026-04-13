@@ -59,4 +59,7 @@ import java.util.Scanner;
      }
         return null;
     }
-   
+    public String loginUser(String username, String password){
+        String firstName=null;
+        String lastName=null;
+      
