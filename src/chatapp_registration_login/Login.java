@@ -11,4 +11,7 @@ import java.util.Scanner;
     /**
      * @param args the command line arguments
      */
+    String storedusername;
+    String storedpassword;
+    String storedcellphonenumber;
    
