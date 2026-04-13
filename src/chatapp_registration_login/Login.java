@@ -30,4 +30,11 @@ import java.util.Scanner;
     boolean hasUppercase = storedpassword.matches(".*[A-Z]*.");
     boolean hasNumber = storedpassword.matches(".*[0-9].*");
     boolean hasSpecial = storedpassword.matches(".*[^a-zA-Z0-9].*");
-    
+    if(lengthCheck && hasUppercase && hasNumber && hasSpecial){
+        System.out.println("password succesfully captured");
+        return true;
+    }else{
+        System.out.println("password is not correctly formmated;please ensure that the password contains at least * characters,a capital letter, a number,amd a special character.");
+        return false;
+    }
+ 
