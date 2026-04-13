@@ -37,4 +37,8 @@ import java.util.Scanner;
         System.out.println("password is not correctly formmated;please ensure that the password contains at least * characters,a capital letter, a number,amd a special character.");
         return false;
     }
- 
+  }
+    public boolean checkCellPhoneNumber(String cell){
+        String regex ="^\\+27[0-9]{9}$";
+    if (storedcellphonenumber.matches(regex)){
+      
