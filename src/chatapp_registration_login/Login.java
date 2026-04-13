@@ -14,4 +14,13 @@ import java.util.Scanner;
     String storedusername;
     String storedpassword;
     String storedcellphonenumber;
-   
+    Scanner scan= new Scanner(System.in);
+    public boolean checkUserName(String username){
+    if(username!=null && username.contains("_")&& username.length()<=5){
+    System.out.println("username successfully captured");
+    return true;
+    }else{
+        System.out.println("username is not correctly formmatted;please ensure that your username contains an underscore and is no more than 5 characters in length");
+        return false; 
+    }
+  
