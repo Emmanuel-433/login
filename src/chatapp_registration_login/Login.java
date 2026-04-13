@@ -51,4 +51,12 @@ import java.util.Scanner;
     public String registerUser(String username, String password, String cellphonenumber, String firstName, String lastName){
        Scanner scan= new Scanner(System.in);
     
+     if(checkUserName(username) && checkPasswordComplexity(password) && checkCellPhoneNumber(cellphonenumber)){
+         System.out.println("Registered successfully");
+     }else{
+         System.out.println("Username is incorrectly formatted or your password does not meet the complexity requirements");
+         
+     }
+        return null;
+    }
    
