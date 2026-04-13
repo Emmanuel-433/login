@@ -24,4 +24,10 @@ import java.util.Scanner;
         return false; 
     }
     
-  
+  }
+   public boolean checkPasswordComplexity(String password){
+    boolean lengthCheck = storedpassword.length()>=8;
+    boolean hasUppercase = storedpassword.matches(".*[A-Z]*.");
+    boolean hasNumber = storedpassword.matches(".*[0-9].*");
+    boolean hasSpecial = storedpassword.matches(".*[^a-zA-Z0-9].*");
+    
