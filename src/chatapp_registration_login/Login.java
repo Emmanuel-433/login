@@ -41,4 +41,10 @@ import java.util.Scanner;
     public boolean checkCellPhoneNumber(String cell){
         String regex ="^\\+27[0-9]{9}$";
     if (storedcellphonenumber.matches(regex)){
-      
+        System.out.println("cell phone number successfully added");
+        return true;
+    }else{
+        System.out.println("cell phone number incorrectly formatted or does not contain international code");
+        return false;
+    }    
+  
