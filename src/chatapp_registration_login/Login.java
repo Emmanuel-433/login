@@ -62,4 +62,47 @@ import java.util.Scanner;
     public String loginUser(String username, String password){
         String firstName=null;
         String lastName=null;
-      
+      System.out.println("\n======LOGIN======");
+      System.out.println("Enter Username");
+      username=scan.nextLine();
+      System.out.println("Enter password");
+      password=scan.nextLine();
+      if(checkUserName(username) && checkPasswordComplexity(password)){
+          System.out.println("Welcome" + firstName + " " + lastName + ". It is great to see you again.");
+      }else{
+          System.out.println("Username or password incorrect. Please try agin.");
+      }
+        return null;
+       
+    }
+    
+ 
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner scan=new Scanner(System.in);
+        Login login = new Login();
+        int choice;
+        
+        do{
+        System.out.println("\n======MENU======");
+        System.out.println("1.Register");
+        System.out.println("2.Login");
+        System.out.println("Enter Menu option");
+        choice =scan.nextInt();
+        
+        switch (choice){
+            case 1:
+                login.registerUser("Ka_1", "Pass@123", "+27831234567", "Karl", "Smith");
+                break;
+            case 2:
+                login.loginUser("Ka_1", "Pass@123");
+                break;
+            default:   
+                System.out.println("Invalid choice");
+        }
+        }while(choice!=2);
+        scan.close();
+    }
+    }
+    
+
