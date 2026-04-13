@@ -47,4 +47,8 @@ import java.util.Scanner;
         System.out.println("cell phone number incorrectly formatted or does not contain international code");
         return false;
     }    
-  
+  }
+    public String registerUser(String username, String password, String cellphonenumber, String firstName, String lastName){
+       Scanner scan= new Scanner(System.in);
+    
+   
